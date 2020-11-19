@@ -6,6 +6,8 @@
     - name: install python-docker di ubuntu
       apt:
         name:
+          - python
+          - python-docker
           - python3
           - python3-docker
         state: present
