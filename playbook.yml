@@ -27,6 +27,6 @@
         name: docker-ansible
         image: "{{ image }}"
         state: started
-        publish_ports:
+        published_ports:
         - 10000:80
         recreate: yes
