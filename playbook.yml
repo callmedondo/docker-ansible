@@ -1,6 +1,6 @@
 - hosts: server 
   vars:
-  - image: callmedondo/apache-docker-ansible
+  - image: sidondo/apache-docker-ansible
   tasks:
     - name: install phyton-docker di ubuntu
       apt:
