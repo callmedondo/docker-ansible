@@ -2,16 +2,16 @@
   vars:
   - image: sidondo/apache-docker-ansible
   tasks:
-    - name: install phyton-docker di ubuntu
+    - name: install python-docker di ubuntu
       apt:
         name:
-          - phyton3
-          - phyton3-docker
+          - python3
+          - python3-docker
         state: present
       when: ansible_distribution == "Ubuntu"
-    - name: install phyton-docker centos
+    - name: install python-docker centos
       yum:
-        name: phyton-docker
+        name: python-docker
         state: present
       when: ansible_distribution == "CentOS"
     - name: pull image docker
